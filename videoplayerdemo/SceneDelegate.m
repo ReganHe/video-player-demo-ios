@@ -7,6 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "ViewController.h"
+#import "VideoController/GTVideoViewController.h"
 
 @interface SceneDelegate ()
 
@@ -22,7 +23,7 @@
     UIWindowScene *windowScene=(UIWindowScene *)scene;
     _window=[[UIWindow alloc] initWithFrame:windowScene.coordinateSpace.bounds];
     _window.windowScene=windowScene;
-    [_window setRootViewController:[[ViewController alloc] init]];
+    [_window setRootViewController:[[GTVideoViewController alloc] init]];
     [_window makeKeyAndVisible];
 }
 
